@@ -1,0 +1,16 @@
+# In _config.yml
+title: Python for sociologists
+author: Thomas Louf
+# logo: logo.png
+
+execute:
+  execute_notebooks: cache
+
+only_build_toc_files: true
+
+# repository:
+  # url: https://github.com/neurodata/graph-stats-book
+
+# Add a bibtex file so that we can create citations
+# bibtex_bibfiles:
+  # - references.bib
