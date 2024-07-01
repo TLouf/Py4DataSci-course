@@ -4,7 +4,7 @@ hvplot==0.10.0
 numpy==1.26.4
 pandas==2.2
 pyarrow==16.1.0
-polars>=1.0.0.rc2
+polars>=1.0.0
 ipywidgets==7.3.0
 metakernel
 jupyterlab_myst
