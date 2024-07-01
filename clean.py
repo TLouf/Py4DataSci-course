@@ -24,7 +24,7 @@ if __name__ == "__main__":
     # Configure tag removal - be sure to tag your cells to remove  using the
     # words remove_cell to remove cells. You can also modify the code to use
     # a different tag word
-    c.TagRemovePreprocessor.remove_cell_tags = ("hide-cell",)
+    c.TagRemovePreprocessor.remove_cell_tags = ("hide-cell", "answer")
     c.TagRemovePreprocessor.remove_all_outputs_tags = ("hide-output",)
     c.TagRemovePreprocessor.remove_input_tags = ("hide-input",)
     c.TagRemovePreprocessor.enabled = True
