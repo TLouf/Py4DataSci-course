@@ -6,4 +6,4 @@ dependencies:
   - python=3.10
   - jupyterlab
   - pip:
-      -r requirements.txt
+    - -r requirements.txt
