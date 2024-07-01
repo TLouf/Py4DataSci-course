@@ -4,7 +4,7 @@ root: index
 parts:
   - caption: Getting Started
     chapters:
-      - file: installation
+      - glob: getting_started/*
   - caption: Functions
     chapters:
       - glob: functions/*
