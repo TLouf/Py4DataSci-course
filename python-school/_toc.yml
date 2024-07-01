@@ -7,4 +7,6 @@ parts:
       - glob: getting_started/*
   - caption: Functions
     chapters:
-      - glob: functions/*
+  - caption: Dataframes
+    chapters:
+      - glob: dataframes/*-sol*
