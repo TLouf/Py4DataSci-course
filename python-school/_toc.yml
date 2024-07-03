@@ -8,6 +8,9 @@ parts:
   - caption: Functions
     chapters:
       - glob: functions/*-sol*
+  - caption: Dealing with data files
+    chapters:
+      - glob: data_files/*-sol*
   - caption: Dataframes
     chapters:
       - glob: dataframes/*-sol*
