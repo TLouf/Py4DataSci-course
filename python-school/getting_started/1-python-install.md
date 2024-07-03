@@ -11,7 +11,7 @@ Given the wide variety of installation methods and the fact Python is available 
 ## Windows installation
 
 
-For Windows, we suggest to install the distribution [Anaconda for Python 3.8](https://www.anaconda.com/download/#windows) or greater, which, along with the native Python package manager `pip`, also offers the  more generic command line package manager `conda`.
+For Windows, we suggest to install the distribution [Anaconda for Python 3](https://www.anaconda.com/download/success) or greater, which, along with the native Python package manager `pip`, also offers the  more generic command line package manager `conda`.
 
 Once installed, verify it is working like this:
 
@@ -177,19 +177,17 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 To exit Python, type `exit()` and press Enter.
 
+
 ## Linux installation
 
 Luckily, all Linux distributions are already shipped with package managers to easily install applications.
 
-- If you have Ubuntu:
-
-    1. follow the guide of [Dive into Python 3, chapter 0 - Installare Python](https://diveintopython3.problemsolving.io/installing-python.html) in particular by going to the subsection [installing in Ubuntu Linux](https://diveintopython3.problemsolving.io/installing-python.html#ubuntu)
-
-    2. after completing the guide, install also `python3-venv`:
+- If you have Ubuntu, you may need to install `python3-venv`:
         ```bash
         sudo apt-get install python3-venv
         ```
-- If you _don't_ have Ubuntu, [read this note](https://diveintopython3.problemsolving.io/installing-python.html#other) and/or ask somebody who knows more.
+
+- If you _don't_ have Ubuntu, you probably know yourself how to install Python and pip, but feel free to ask the course instructor for help.
 
 To verify the installation, try to run from the terminal
 

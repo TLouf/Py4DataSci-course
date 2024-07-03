@@ -3,10 +3,22 @@
 
 ## Getting the course content
 
-from [this link](https://github.com/TLouf/python-school/archive/refs/heads/main.zip). Then move the file to wherever you'd like to put the courses contents, and extract it.
+Download the course content from [this link](https://github.com/TLouf/python-school/archive/refs/heads/main.zip), and then move the file to wherever you'd like to put the courses contents, and extract it.
 
 
 ## Installing packages
+
+
+### For the course
+
+Navigate to the directory you just extracted, and run
+
+```bash
+pip install -r requirements.txt
+```
+
+
+### Install other packages (if needed)
 
 You can extend Python by installing several free packages. The best way to do it varies according to the operating system and the installed package manager.
 
