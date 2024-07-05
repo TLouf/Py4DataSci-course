@@ -11,6 +11,9 @@ parts:
   - caption: NumPy
     chapters:
       - glob: numpy/*-sol*
+  - caption: Visualization
+    chapters:
+      - glob: visualization/*-sol*
   - caption: Dealing with data files
     chapters:
       - glob: data_files/*-sol*
