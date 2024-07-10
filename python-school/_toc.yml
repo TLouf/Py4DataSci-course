@@ -21,3 +21,4 @@ parts:
   - caption: Dataframes
     chapters:
       - glob: dataframes/*-sol*
+      - file: dataframes/3-chal.ipynb
