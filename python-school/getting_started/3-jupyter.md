@@ -22,15 +22,15 @@ If you see written `>>>` on command line it means you must first exit Python ins
 
 ```
 
-```{warning}
-If Jupyter is not installed you will see error messages, in this case don't panic and [go to installation](#Installing-Jupyter-lab---all-operating-systems).
+If Jupyter is not installed you will see error messages, in this case you may try installing Jupyter with `pip` (the native package manager of Python) by running:
 
+```bash
+    python3 -m pip install --user jupyter -U
 ```
 
+On you managed to start Jupyter, a browser tab should automatically open, and in the console you should see messages like the following ones. In the browser you should see the files of the folders from which you ran Jupyter.
 
-A browser should automatically open with Jupyter, and in the console you should see messages like the following ones. In the browser you should see the files of the folders from which you ran Jupyter.
-
-If no browser starts but you see a message like the one here, then copy the address you see in an internet browser, preferebly Chrome, Safari or Firefox.
+If no browser starts but you see a message like the one here, then copy the address you see in an internet browser, preferably Firefox.
 
 ```
 $ jupyter lab
@@ -47,7 +47,7 @@ $ jupyter lab
 ```
 
 ```{warning}
-In this case the address is `http://localhost:8888/?token=49d4394bac446e291c6ddaf349c9dbffcd2cdc8c848eb888`, but youts will surely be different!
+In this case the address is `http://localhost:8888/?token=49d4394bac446e291c6ddaf349c9dbffcd2cdc8c848eb888`, but yours will surely be different!
 ```
 
 ```{warning}
@@ -146,17 +146,3 @@ jupyter nbextension enable toc2/main
 
 ![](img/toc2-jupyter-enable.png)
 
-
-## Installing Jupyter lab - all operating systems
-
-If you didn't manage to [find and/or start Jupyter](#Run-Jupyter-lab), probably it means we need to install it!
-
-You may try installing Jupyter with `pip` (the native package manager of Python)
-
-To install, run this command:
-
-```bash
-    python3 -m pip install --user jupyter -U
-```
-
-Once installed, follow the section [Run Jupyter lab](#Run-Jupyter-lab)
