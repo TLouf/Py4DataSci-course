@@ -1,5 +1,5 @@
 # In _config.yml
-title: Python for sociologists
+title: Py4DataSci
 author: Thomas Louf
 # logo: logo.png
 
@@ -8,9 +8,5 @@ execute:
 
 only_build_toc_files: true
 
-# repository:
-  # url: https://github.com/neurodata/graph-stats-book
-
-# Add a bibtex file so that we can create citations
-# bibtex_bibfiles:
-  # - references.bib
+repository:
+  url: https://github.com/TLouf/python-school
