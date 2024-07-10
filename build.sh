@@ -1,4 +1,4 @@
-#!/usr/bin/env zsh
+#!/usr/bin/env sh
 BOOK_DIR="python-school"
 
 python clean.py $BOOK_DIR
