@@ -17,6 +17,7 @@ parts:
   - caption: Dealing with data files
     chapters:
       - glob: data_files/*-sol*
+      - file: data_files/4-chal.ipynb
   - caption: Dataframes
     chapters:
       - glob: dataframes/*-sol*
