@@ -3,6 +3,7 @@ from pathlib import Path
 
 from nbconvert.exporters import NotebookExporter
 from nbconvert.preprocessors import TagRemovePreprocessor
+from tqdm import tqdm
 from traitlets.config import Config
 
 
@@ -12,7 +13,7 @@ def clean(path, config, suffix="-sol"):
 
     # Configure and run our exporter - returns a tuple - first element with ipynb,
     # second with notebook metadata
-    for p in Path(path).glob(f"**/*{suffix}.ipynb"):
+    for p in tqdm(Path(path).glob(f"**/*{suffix}.ipynb")):
         output = exporter.from_filename(str(p))
         p.with_stem(p.stem.removesuffix(suffix)).write_text(output[0])
 
