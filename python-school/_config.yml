@@ -8,5 +8,12 @@ execute:
 
 only_build_toc_files: true
 
+html:
+  use_repository_button: true
+  home_page_in_navbar: false
+  baseurl: "https://tlouf.github.io/Py4DataSci-course"
+
 repository:
   url: https://github.com/TLouf/Py4DataSci-course
+  path_to_book: "python-school"
+  branch: "main"
