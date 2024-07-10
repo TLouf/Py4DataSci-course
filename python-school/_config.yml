@@ -9,4 +9,4 @@ execute:
 only_build_toc_files: true
 
 repository:
-  url: https://github.com/TLouf/python-school
+  url: https://github.com/TLouf/Py4DataSci-course

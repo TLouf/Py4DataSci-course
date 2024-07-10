@@ -3,7 +3,7 @@
 
 ## Getting the course content
 
-Download the course content from [this link](https://github.com/TLouf/python-school/archive/refs/heads/main.zip), and then move the file to wherever you'd like to put the courses contents, and extract it.
+Download the course content from [this link](https://github.com/TLouf/Py4DataSci-course/archive/refs/heads/main.zip), and then move the file to wherever you'd like to put the courses contents, and extract it.
 
 
 ## Installing packages
