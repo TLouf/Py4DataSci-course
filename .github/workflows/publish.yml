@@ -29,6 +29,10 @@ jobs:
         packages: graphviz
         version: 1.0
 
+    - name: Graphviz config
+      run: |
+        sudo dot -c
+
     # Install dependencies
     - name: Set up Python 3.11
       uses: actions/setup-python@v4
