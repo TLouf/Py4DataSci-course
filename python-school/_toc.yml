@@ -2,7 +2,7 @@
 format: jb-book
 root: index
 parts:
-  - caption: Getting Started
+  - caption: Getting started
     chapters:
       - glob: getting_started/*
   - caption: Functions
