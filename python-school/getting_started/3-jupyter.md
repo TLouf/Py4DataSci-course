@@ -25,7 +25,7 @@ If you see written `>>>` on command line it means you must first exit Python ins
 If Jupyter is not installed you will see error messages, in this case you may try installing Jupyter with `pip` (the native package manager of Python) by running:
 
 ```bash
-    python3 -m pip install --user jupyter -U
+    python3 -m pip install --user jupyterlab -U
 ```
 
 On you managed to start Jupyter, a browser tab should automatically open, and in the console you should see messages like the following ones. In the browser you should see the files of the folders from which you ran Jupyter.
@@ -73,17 +73,13 @@ In the console you see the server output of Jupyter, which is active and in cert
 You can save the current notebook in Jupyter by pressing `Control-S` while in the browser.
 
 ```{warning}
-
 Do not open the same document in many tabs.
 
 Be careful to not open the same notebook in more the one tab, as modifications in different tabs may overwrite at random !  To avoid these awful situations, make sure to have only one tab per document. If you accidentally open  the same notebook in different tabs, just close the additional tab.
-
 ```
 
 ```{note}
-
 Notebook changes are automatically saved every few minutes.
-
 ```
 
 
@@ -102,47 +98,15 @@ Shutdown this notebook server (y/[n])? y
 
 ## Navigating notebooks
 
+To quickly navigate in a notebook, you should use the Table of Contents tab, shown below:
 
-(Optional) To improve navigation experience in Jupyter notebooks, you may want to install some Jupyter extension, like `toc2` which shows paragraph headers in the sidebar. To install:
-
-
-Install the [Jupyter contrib extensions](https://github.com/ipython-contrib/jupyter_contrib_nbextensions):
+![](img/jupyterlab_toc.png)
 
 
-**1a. If you have Anaconda:** Open Anaconda Prompt (or Terminal if on Max/Linux), and type:
+## Doing magic
 
-```bash
-conda install -c conda-forge jupyter_contrib_nbextensions
-```
+What actually executes the code you put in notebook cells is called [IPython](https://ipython.readthedocs.io/). And IPython offers a great feature called [magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html). They are in two flavours: the line magics, that start with a single `%`, and the cell magics, that start with a `%%`. Here are a few selected examples of the most useful ones:
 
-**1b. If you don't have Anaconda:** Open the terminal and type:
-
-```bash
-python3 -m pip install --user jupyter_contrib_nbextensions
-```
-
-**2. Install in Jupyter:**
-
-```bash
-jupyter contrib nbextension install --user
-```
-
-**3. Enable extensions:**
-
-```bash
-jupyter nbextension enable toc2/main
-```
-
-**Once installed**: To see table of contents in a document you will have to press a list button on the right side of the toolbar:
-
-![](img/toc2-jupyter.jpg)
-
-**If by chance you don't see the button:**
-
-1. go to main Jupyter interface
-2. check `Nbextensions` tab
-3. make sure `Table of Contents(2)` is enabled
-4. Close Jupyter, reopen it, go to a notebook, you should finally see the button
-
-![](img/toc2-jupyter-enable.png)
-
+- [`%pinfo object`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-pinfo), or, equivalently, `object?`, that provide detailed information about an object. For instance, it enables you to see all the arguments of a function or class. So it's extremely useful whenever you discover a new function, or forgot the name of a specific argument you've used before.
+- [`%psearch pattern`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-psearch), or, equivalently, `?pattern`, allows you to search for objects available to you. The pattern you provide contains characters to look for, and the so-called *wildcard character* `*` to say: "match anything". For instance, to see all `list` methods that contain the characters `end`, you'd run `?list.*end*`. Extremely useful to remember the name of a function or class you forgot!
+- [`%%prun`](https://ipython.readthedocs.io/en/stable/interactive/magics.html#magic-prun) allows you to profile the code run in the same cell. Profiling enables you to identify the parts of your code that takes the most time. It's particularly useful when sorting the output by cumulative time, like so: `%%prun -s cumulative`.
