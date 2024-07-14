@@ -57,15 +57,17 @@ In the console you see the server output of Jupyter, which is active and in cert
 
 ```
 
-## Interacting with cells
+## Interacting with a notebook
 
-- to edit a cell, press `Enter` or click inside it.
-- to get out of editing mode, press `Escape`, or click outside it.
-- to execute Python code inside a Jupyter cell, press `Control + Enter`
-- to execute Python code inside a Jupyter cell AND select next cell, press `Shift + Enter`
-- to execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press `Alt + Enter`
-- to create a new cell above / below the current one press `A` / `B` (naturally, this doesn't work while editing the cell).
-- If the notebooks look stuck, try to select `Kernel -> Restart`
+- To edit a cell, press `Enter` or click inside it.
+- To get out of editing mode, press `Escape`, or click outside it.
+- To execute Python code inside a Jupyter cell, press `Control + Enter`.
+- To execute Python code inside a Jupyter cell AND select next cell, press `Shift + Enter`.
+- To execute Python code inside a Jupyter cell AND a create a new cell aftwerwards, press `Alt + Enter`.
+- To create a new cell above / below the current one press `A` / `B` (naturally, this doesn't work while editing the cell).
+- To delete a cell, select it and press `D` twice.
+- To undo a cell operation (such as restore a deleted cell), press `Z`.
+- If the notebooks look stuck, try to select `Kernel -> Restart`.
 
 
 ## Saving Jupyter notebooks
