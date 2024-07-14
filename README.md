@@ -1,5 +1,6 @@
-
 # Py4DataSci course
+
+[![Jupyter Book Badge](https://jupyterbook.org/badge.svg)](https://tlouf.github.io/Py4DataSci-course)
 
 Introductive guide to coding, data cleaning and analysis for Python 3, with many worked exercises.
 
