@@ -1,7 +1,6 @@
 # In _config.yml
 title: Py4DataSci
 author: Thomas Louf
-# logo: logo.png
 
 execute:
   execute_notebooks: cache
@@ -9,6 +8,7 @@ execute:
 only_build_toc_files: true
 
 html:
+  favicon: "_static/img/u1f40d.svg"
   use_repository_button: true
   home_page_in_navbar: false
   baseurl: "https://tlouf.github.io/Py4DataSci-course"
