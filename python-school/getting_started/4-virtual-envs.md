@@ -54,7 +54,7 @@ Once the environment is active, in the command prompt we should see the name of 
 (myprj) some/current/folder >
 ```
 
-The prefix lets us know that the environment `myprj` is currently active, so Python comands we will use all use the settings and libraries of that environment.
+The prefix lets us know that the environment `myprj` is currently active, so Python commands we will use all use the settings and libraries of that environment.
 
 Note: inside the virtual environment, we can use the command `python` instead of `python3` and `pip` instead of `pip3`
 
@@ -65,7 +65,7 @@ Write in the console the command `deactivate`. Once the environment is deactivat
 
 ## Executing environments inside Jupyter
 
-As we said before, Jupyter is a system-level application, so there should be one and only one Jupyter. Nevertheless, during Jupyter execution, we might want to execute our Python commands in a particular Python environment. To do so, we must configure Jupyter so to use the desired environment. In Jupyter terminology, the configurations are called _kernel_: they define the programs launched by Jupyter (be they Python versions or also other languages like R). The current kernel for a notebook is visibile in the right-upper corner. To select a desired kernel, there are several ways:
+As we said before, Jupyter is a system-level application, so there should be one and only one Jupyter. Nevertheless, during Jupyter execution, we might want to execute our Python commands in a particular Python environment. To do so, we must configure Jupyter so to use the desired environment. In Jupyter terminology, the configurations are called _kernel_: they define the programs launched by Jupyter (be they Python versions or also other languages like R). The current kernel for a notebook is visible in the right-upper corner. To select a desired kernel, there are several ways:
 
 ### With Anaconda
 

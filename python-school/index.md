@@ -3,11 +3,11 @@
 **Introductive guide to coding, data cleaning and analysis for Python 3, with many worked exercises.**
 
 
-Nowadays, more and more decisions are taken upon factual and objective data. All disciplines, from engineering to social sciences, require to elaborate data and extract actionable information by analysing heterogenous sources. This book of practical exercises gives an introduction to coding and data processing using [Python](https://www.python.org), a programming language popular both in the industry and in research environments.
+Nowadays, more and more decisions are taken upon factual and objective data. All disciplines, from engineering to social sciences, require to elaborate data and extract actionable information by analysing heterogeneous sources. This book of practical exercises gives an introduction to coding and data processing using [Python](https://www.python.org), a programming language popular both in the industry and in research environments.
 
 ## Intended audience
 
-This book can be useful for both novices who never really programmed before, and for students with more techical background, who desire to know about data extraction, cleaning, analysis and visualization (among used frameworks there are Polars, Numpy and Jupyter). Data is going to be processed in a practical way, without delving into more advanced considerations about algorithmic complexity and data structures. To overcome issues and guarantee concrete didactical results, step-by-step tutorials are presented.
+This book can be useful for both novices who never really programmed before, and for students with more technical background, who desire to know about data extraction, cleaning, analysis and visualization (among used frameworks there are Polars, Numpy and Jupyter). Data is going to be processed in a practical way, without delving into more advanced considerations about algorithmic complexity and data structures. To overcome issues and guarantee concrete didactical results, step-by-step tutorials are presented.
 
 
 ## Acknowledments
@@ -24,9 +24,9 @@ Email: [david.leoni@unitn.it](mailto:david.leoni@unitn.it) &ensp; Website: [davi
 
 #### Contributors
 
-**Marco Caresia** (2017 Autumn Edition assistent @DISI, University of Trento): He has been informatics teacher at Scuola Professionale Einaudi of Bolzano. He is president of the Trentino Alto Adige Südtirol delegatioon of the Associazione Italiana Formatori and vicepresident of CoderDolomiti Association.
+**Marco Caresia** (2017 Autumn Edition assistant @DISI, University of Trento): He has been informatics teacher at Scuola Professionale Einaudi of Bolzano. He is president of the Trentino Alto Adige Südtirol delegatioon of the Associazione Italiana Formatori and vicepresident of CoderDolomiti Association.
 
-**Alessio Zamboni** (2018 March Edition assistent @Sociology Department, University of Trento): Data scientist and software engineer with experience in NLP, GIS and knowledge management. Has collaborated to numerous research projects, collecting experinces in Europe and Asia. He strongly believes that _'Programming is a work of art'_.
+**Alessio Zamboni** (2018 March Edition assistant @Sociology Department, University of Trento): Data scientist and software engineer with experience in NLP, GIS and knowledge management. Has collaborated to numerous research projects, collecting experiences in Europe and Asia. He strongly believes that _'Programming is a work of art'_.
 
 **Luca Bosotti** (2020 Data Science Summerschool assistant, 2021 seminars @Sociology Department, University of Trento): Developer, scientist and professor. Believes the world is getting more and more complicated and interesting, so we must study it by taking advantage of all the available potential and reasoning. He thought to youngsters of all ages, from elementary schools up till university level and got impressed by the diversity of people who approach programming.
 

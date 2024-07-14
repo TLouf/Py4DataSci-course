@@ -32,7 +32,7 @@ In what follows, to check if everything is working, you can substitute `PACKAGEN
 
 If you have Anaconda:
 
-- click on Windows icon in the lower left corner and search `Anaconda Prompt`. A console should appear where to instert commands, with something written like `C:\Users\David>`. (NOTE: to run commands in Anaconda, use only this special console. If you use the default Windows console (cmd), Windows, will not be able to find Python)
+- click on Windows icon in the lower left corner and search `Anaconda Prompt`. A console should appear where to insert commands, with something written like `C:\Users\David>`. (NOTE: to run commands in Anaconda, use only this special console. If you use the default Windows console (cmd), Windows, will not be able to find Python)
 
 - In the console type `conda install PACKAGENAME`
 
