@@ -105,6 +105,7 @@ To quickly navigate in a notebook, you should use the Table of Contents tab, sho
 ![](img/jupyterlab_toc.png)
 
 
+(ipython_magic)=
 ## Doing magic
 
 What actually executes the code you put in notebook cells is called [IPython](https://ipython.readthedocs.io/). And IPython offers a great feature called [magic commands](https://ipython.readthedocs.io/en/stable/interactive/magics.html). They are in two flavours: the line magics, that start with a single `%`, and the cell magics, that start with a `%%`. Here are a few selected examples of the most useful ones:
