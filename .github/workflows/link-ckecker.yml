@@ -1,0 +1,17 @@
+name: Broken link checker
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  linkChecker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Link Checker
+        uses: lycheeverse/lychee-action@v1
+        with:
+          args: --exclude-path python-school/_build/html/_static python-school/_build/html/**/*.html
+          fail: true
