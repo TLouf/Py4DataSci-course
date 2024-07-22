@@ -11,10 +11,43 @@ Download the course content from [this link](https://github.com/TLouf/Py4DataSci
 
 ### For the course
 
+
+#### With `pip` (simplest)
+
+
 Navigate to the directory you just extracted, and run
 
 ```bash
 pip install -r requirements.txt
+```
+
+If you get an error message saying that `pip` is not installed, or something similar, then try:
+
+```
+python -m pip install -r requirements.txt
+```
+
+or, if that fails too, replacing `python` with either `python3` or `py`.
+
+
+#### With `conda`
+
+Again, navigate to the course directory, and run either:
+
+```
+conda install -f environment.yml
+```
+
+or
+
+```
+conda env create -f environment.yml
+```
+
+In this second case, later on, whenever you want to launch `jupyter`, you'll first need to do:
+
+```
+conda activate python-school
 ```
 
 
