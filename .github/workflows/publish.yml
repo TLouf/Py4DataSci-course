@@ -28,6 +28,7 @@ jobs:
       with:
         packages: graphviz
         version: 1.0
+        execute_install_scripts: true
 
     - name: Graphviz config
       run: |
