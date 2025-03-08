@@ -17,3 +17,7 @@ repository:
   url: https://github.com/TLouf/Py4DataSci-course
   path_to_book: "python-school"
   branch: "main"
+
+sphinx:
+  extra_extensions:
+    - sphinxcontrib.lightbox2
