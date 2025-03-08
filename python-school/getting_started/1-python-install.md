@@ -58,16 +58,16 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ```{warning}
 
-With Anaconda, you must write `python` instead of `python3` !
+With Anaconda, you must write `python` instead of `python3`!
 
-If you installed Anaconda for Python3, it will automatically use the correct Python version by simply writing `python`. If you write `python3` you will receive an error of file not found !
+If you installed Anaconda for Python3, it will automatically use the correct Python version by simply writing `python`. If you write `python3` you will receive an error of file not found!
 
 ```
 
 
 ```{warning}
 
-If you have Anaconda, always use `conda` to install Python modules ! So if in next tutorials you se written `pip3 install whatever`, you will instead have to use `conda install whatever`
+If you have Anaconda, always use `conda` to install Python modules! So if in next tutorials you se written `pip3 install whatever`, you will instead have to use `conda install whatever`
 
 ```
 
@@ -80,102 +80,102 @@ To best manage installed app on Mac independently from Python, usually it is con
 
 Check if you already have a package manager!
 
-If you already have installed a package manager like for example Conda (in _Anaconda_ distribution), _Rudix,_ _Nix,_ _Pkgsrc,_ _Fink,_ o _MacPorts,_ maybe Homebrew is not needed and it's better to use what you already have. In these cases, it may be worth asking somebody who knows more ! If you already have _Conda/Anaconda_, it can be ok as long as it is for Python 3.
+If you already have installed a package manager like for example Conda (in _Anaconda_ distribution), _Rudix,_ _Nix,_ _Pkgsrc,_ _Fink,_ o _MacPorts,_ maybe Homebrew is not needed and it's better to use what you already have. In these cases, it may be worth asking somebody who knows more! If you already have _Conda/Anaconda_, it can be ok as long as it is for Python 3.
 
 ```
 
-
-— 1 Open the Terminal
+1. Open the Terminal
 
 MacOS terminal is an application you can use to access command line. As any other application, it's available in _Finder_, navigation in _Applications_ folder, and the in the folder _Accessories_. Frotm there, double click on the _Terminal_ to open it as any other app. As an alternative, you can use _Spotlight_ by pressing _Command_ and _Space_ to find the Terminal typing the name in the bar that appears.
 
-— 2 Install Homebrew by executing in the terminal this command:
+2. Install Homebrew by executing in the terminal this command:
 
 ```bash
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
 
-— 3 Add `/usr/local/bin` to `PATH`
+3. Add `/usr/local/bin` to `PATH`
 
-In this passage with an unsettling name, once Homebrew installation is completed, you will make sure that apps installed with Homebrew shall always be used instead of those Mac OS X may automatically select.
+    In this passage with an unsettling name, once Homebrew installation is completed, you will make sure that apps installed with Homebrew shall always be used instead of those Mac OS X may automatically select.
 
-— 3.1 Open a new Terminal.
+    1. Open a new Terminal.
 
-— 3.2 From within the terminal, digit the command
+    2. From within the terminal, digit the command
 
-```bash
-ls -a
-```
+        ```bash
+        ls -a
+        ```
 
-You will see the list of all files present in the home folder. In these files, verify if a file exists with the following name: `.profile` (note the dot at the beginning):
+        You will see the list of all files present in the home folder. In these files, verify if a file exists with the following name: `.profile` (note the dot at the beginning):
 
-- If it exists, go to following step
-- If it doesn't exist, to create it type the following command:
+        - If it exists, go to following step
+        - If it doesn't exist, to create it type the following command:
+
+            ```bash
+            touch  $HOME/.profile
+            ```
+
+    3. Open with text edit the just created file `.profile` giving the command:
+
+        ```bash
+        open -e  $HOME/.profile
+        ```
+
+    4. In text edit, add to the end of the file the following line:
+
+        ```bash
+        export PATH=/usr/local/bin:$PATH
+        ```
+
+    5. Save and close both Text Edit and the Terminal
+
+
+4. Verify Homebrew is correctly installed, by typing in a new Terminal:
 
     ```bash
-        touch  $HOME/.profile
+    brew doctor
     ```
 
-— 3.3 Open with text edit the just created file `.profile` giving the command:
+    If there aren't updates to do, the Terminal should show:
 
-```bash
-open -e  $HOME/.profile
-```
+    ```bash
+    Your system is ready to brew.
+    ```
 
-— 3.4 In text edit, add to the end of the file the following line:
+    Otherwise, you might see a warning which suggest to  execute another command like `brew update` to ensure the Homebrew installation is updated.
 
-```bash
-export PATH=/usr/local/bin:$PATH
-```
-— 3.5 Save and close both Text Edit and the Terminal
+5. Install python3 (Remember the '3'!):
 
 
-— 4 Verify Homebrew is correctly installed, by typing in a new Terminal:
+    ```bash
+    brew install python3
+    ```
 
-```bash
-brew doctor
-```
+    Along with python 3, Homebrew will also install the internal package manager of Python `pip3` which we will use in the following.
 
-If there aren't updates to do, the Terminal should show:
+6. Verify Python3 is correctly installed. By executing this command the writing `"/usr/local/bin/python3"` should appear:
 
-```bash
-Your system is ready to brew.
-```
+    ```bash
+    which python3
+    ```
 
-Otherwise, you might see a warning which suggest to  execute another command like `brew update` to ensure the Homebrew installation is updated.
+    After this, try to launch
 
-— 5. Install python3 (Remember the '3' !):
+    ```bash
+    python3
+    ```
 
+    You should see something similar:
 
-```bash
-brew install python3
-```
+    ```bash
+    Python 3.6.3 (default, Nov 17 2016, 17:05:23)
+    [GCC 5.4.0 20160609] on mac
+    Type "help", "copyright", "credits" or "license" for more information.
+    >>>
+    ```
 
-Along with python 3, Homebrew will also install the internal package manager of Python `pip3` which we will use in the following.
-
-— 6 Verify Python3 is correctly installed. By executing this command the writing `"/usr/local/bin/python3"` should appear:
-
-```bash
-which python3
-```
-
-After this, try to launch
-
-```bash
-python3
-```
-
-You should see something similar:
-
-```bash
-Python 3.6.3 (default, Nov 17 2016, 17:05:23)
-[GCC 5.4.0 20160609] on mac
-Type "help", "copyright", "credits" or "license" for more information.
->>>
-```
-
-To exit Python, type `exit()` and press Enter.
+    To exit Python, type `exit()` and press Enter.
 
 
 ## Linux installation
@@ -183,11 +183,11 @@ To exit Python, type `exit()` and press Enter.
 Luckily, all Linux distributions are already shipped with package managers to easily install applications.
 
 - If you have Ubuntu, you may need to install `python3-venv`:
-        ```bash
-        sudo apt-get install python3-venv
-        ```
+    ```bash
+    sudo apt-get install python3-venv
+    ```
 
-- If you _don't_ have Ubuntu, you probably know yourself how to install Python and pip, but feel free to ask the course instructor for help.
+- If you _don't_ have Ubuntu, you probably already know how to install Python and pip, but feel free to ask the course instructor for help.
 
 To verify the installation, try to run from the terminal
 
@@ -203,5 +203,3 @@ Python 3.6.3 (default, Nov 17 2016, 17:05:23)
 Type "help", "copyright", "credits" or "license" for more information.
 >>>
 ```
-
-
