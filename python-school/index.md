@@ -10,6 +10,15 @@ Nowadays, more and more decisions are taken upon factual and objective data. All
 This book can be useful for both novices who never really programmed before, and for students with more technical background, who desire to know about data extraction, cleaning, analysis and visualization (among used frameworks there are Polars, Numpy and Jupyter). Data is going to be processed in a practical way, without delving into more advanced considerations about algorithmic complexity and data structures. To overcome issues and guarantee concrete didactical results, step-by-step tutorials are presented.
 
 
+## Complementary resources
+
+- [CS50's Introduction to Programming with Python](https://www.youtube.com/playlist?list=PLhQjrBD2T3817j24-GogXmWqO5Q5vYy0V), by David Malan, for Harvard University.
+- The [Python Cheatsheet](https://www.pythoncheatsheet.org/) for any memory lapse.
+- The [Think Python course](https://allendowney.github.io/ThinkPython/index.html).
+- [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/), for more "meta-programming" tips.
+- [Awesome Python](https://awesome-python.com/#resources), a curated list of awesome Python frameworks, libraries, software and resources.
+
+
 ## Acknowledments
 
 ### SoftPython
@@ -43,4 +52,4 @@ Unless otherwise noted, the material in this website is original and distributed
 
 ### Misc
 
-All website pages are easily modifiable Jupyter notebooks, that were  converted to web pages using [Jupyter Book](https://jupyterbook.org/).
+All website pages are easily modifiable Jupyter notebooks, that were converted to web pages using [Jupyter Book](https://jupyterbook.org/).
