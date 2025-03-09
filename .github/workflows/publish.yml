@@ -8,9 +8,11 @@ on:
     # If your git repository has the Jupyter Book within some-subfolder next to
     # unrelated files, you can make this run only if a file within that specific
     # folder has been modified.
-    #
-    # paths:
-    # - python-school/**
+    paths:
+    - python-school/**
+
+env:
+  BOOK_DIR: python-school
 
 # This job installs dependencies, builds the book, and pushes it to `gh-pages`
 jobs:
@@ -52,19 +54,19 @@ jobs:
     - name: cache executed notebooks
       uses: actions/cache@v4
       with:
-        path: "python-school/_build/.jupyter_cache"
+        path: "$BOOK_DIR/_build/.jupyter_cache"
         key: jupyter-book-cache-${{ hashFiles('requirements.txt') }}
 
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build python-school
+        jupyter-book build $BOOK_DIR
 
     # Upload the book's HTML as an artifact
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
       with:
-        path: "python-school/_build/html"
+        path: "$BOOK_DIR/_build/html"
 
     # Deploy the book's HTML to GitHub Pages
     - name: Deploy to GitHub Pages
