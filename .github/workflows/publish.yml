@@ -10,6 +10,7 @@ on:
     # folder has been modified.
     paths:
     - python-school/**
+  workflow_dispatch:
 
 env:
   BOOK_DIR: python-school
