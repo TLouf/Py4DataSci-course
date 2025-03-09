@@ -17,3 +17,5 @@ data/
 !python-school/**/data/
 
 figure.pdf
+
+**/sol-*-chal.ipynb
