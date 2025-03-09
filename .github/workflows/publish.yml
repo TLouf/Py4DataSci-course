@@ -24,12 +24,10 @@ jobs:
 
     # Install graphviz to draw Polars graphs.
     - name: Install graphviz
-      run: sudo apt install graphviz
-      # uses: awalsh128/cache-apt-pkgs-action@latest
-      # with:
-      #   packages: graphviz
-      #   version: 1.0
-      #   execute_install_scripts: true
+      uses: awalsh128/cache-apt-pkgs-action@latest
+      with:
+        packages: graphviz
+        version: 1.0
 
     - name: Graphviz config
       run: |
