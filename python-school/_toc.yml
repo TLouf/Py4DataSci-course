@@ -7,22 +7,22 @@ parts:
       - glob: 0-getting-started/*
   - caption: Functions
     chapters:
-      - glob: 1-functions/*-sol*
+      - glob: 1-functions/sol-*
   - caption: Nested data structures
     chapters:
-      - glob: 2-mixed-structures/*-sol*
+      - glob: 2-mixed-structures/sol-*
       - file: 2-mixed-structures/3-chal.ipynb
   - caption: Dealing with data files
     chapters:
-      - glob: 3-data-files/*-sol*
+      - glob: 3-data-files/sol-*
       - file: 3-data-files/4-chal.ipynb
   - caption: NumPy
     chapters:
-      - glob: 4-numpy/*-sol*
+      - glob: 4-numpy/sol-*
   - caption: Visualization
     chapters:
-      - glob: 5-visualization/*-sol*
+      - glob: 5-visualization/sol-*
   - caption: Dataframes
     chapters:
-      - glob: 6-dataframes/*-sol*
+      - glob: 6-dataframes/sol-*
       - file: 6-dataframes/3-chal.ipynb
