@@ -5,7 +5,7 @@ author: Thomas Louf
 execute:
   execute_notebooks: cache
   exclude_patterns:
-    - '*-chal'
+    - '*-chal.ipynb'
 
 only_build_toc_files: true
 
