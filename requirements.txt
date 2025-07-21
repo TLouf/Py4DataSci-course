@@ -9,3 +9,4 @@ ipywidgets==7.3.0
 ipykernel
 metakernel
 jupyterlab_myst
+jupyterlab
