@@ -16,7 +16,6 @@ This book can be useful for both novices who never really programmed before, and
 - The [Python Cheatsheet](https://www.pythoncheatsheet.org/) for any memory lapse.
 - The [Think Python course](https://allendowney.github.io/ThinkPython/index.html).
 - [The Hitchhiker’s Guide to Python](https://docs.python-guide.org/), for more "meta-programming" tips.
-- [Awesome Python](https://awesome-python.com/#resources), a curated list of awesome Python frameworks, libraries, software and resources.
 
 
 ## Acknowledments
